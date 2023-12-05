@@ -48,12 +48,11 @@ import productRoute from "./routes/product.js";
 import cartRoute from "./routes/cart.js";
 import orderRoute from "./routes/order.js";
 import stripeRoute from "./routes/stripe.js";
-import morgan from "morgan";
+
 
 dotenv.config();
 
 const app = express();
-app.use(morgan())
 const PORT = process.env.PORT || 5000;
 
 const connect = async () => {
