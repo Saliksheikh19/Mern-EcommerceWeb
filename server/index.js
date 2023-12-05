@@ -14,7 +14,7 @@
 
 // const connect = () => {
 //   mongoose
-//       .connect(process.env.MONGO_URI)
+//       .connect("mongodb+srv://salik44sheikh:saliksalik@cluster0.oom4j1y.mongodb.net/?retryWrites=true&w=majority")
 //       .then(() => {
 //           console.log(`connected to DB`);
 //       })
