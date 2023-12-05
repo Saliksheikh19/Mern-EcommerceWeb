@@ -3,17 +3,10 @@
   "builds": [
     { "src": "*.js", "use": "@vercel/node" }
   ],
-  "routes": [
+  "routes": 
     {
       "src": "/(.*)",
       "dest": "/",
-      "methods": ["GET"],
-      "headers": {"x-vercel-id": "your_function_id"},
-      "options": {"incremental": true},
-      "status": 200,
-      "continue": true,
-      "methods": ["GET","POST","PUT","UPDATE","DELETE"],
-      "timeout": 5
     }
-  ]
+  
 }
