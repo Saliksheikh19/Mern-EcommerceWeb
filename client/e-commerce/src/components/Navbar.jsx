@@ -96,8 +96,12 @@ dispacth(logout())
         <Right>
         {!user ? (
   <>
+  <Link style={{textDecoration:"none" , color:"inherit"}} to={"/login"}>
     <MenuItem>REGISTER</MenuItem>
+    </Link>
+    <Link style={{textDecoration:"none" , color:"inherit"}} to={"/register"}>
     <MenuItem>SIGN IN</MenuItem>
+    </Link>
   </>
 ) : (
   <MenuItem onClick={handleLogout}>LOGOUT</MenuItem>
