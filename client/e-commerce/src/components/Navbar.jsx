@@ -90,7 +90,7 @@ dispacth(logout())
         </Left>
         <Center>
           <Link style={{textDecoration:"none" , color:"inherit"}} to={"/"}>
-          <Logo>LAMA.</Logo>
+          <Logo>SALIK'S SHOP</Logo>
           </Link>
         </Center>
         <Right>

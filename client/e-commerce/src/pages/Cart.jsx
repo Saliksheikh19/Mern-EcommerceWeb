@@ -262,7 +262,7 @@ const Cart = () => {
               token={onToken}
               stripeKey='pk_test_51OJbPcCdErrEIe7lj6XlM9vOdQ33mavS09XZ7hCT3UAJxO7N86GKEDGtuuWVqKRHULXQi1toIjlL1a8HnUY7PPAj00lOcnqa4P'
             >
-              {/* <Button>CHECKOUT NOW</Button> */}
+              <Button>CHECKOUT NOW</Button>
             </StripeCheckout>
           </Summary>
         </Bottom>
