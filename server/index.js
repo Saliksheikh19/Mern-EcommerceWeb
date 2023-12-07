@@ -14,7 +14,7 @@
 
 // const connect = () => {
 //   mongoose
-//       .connect(process.env.MONGO_URI)
+//       .connect("mongodb+srv://salik44sheikh:saliksalik@cluster0.oom4j1y.mongodb.net/?retryWrites=true&w=majority")
 //       .then(() => {
 //           console.log(`connected to DB`);
 //       })
@@ -24,7 +24,9 @@
 // };
 
 
-// app.use(cors());
+// app.use(cors({
+origin:"*"
+}));
 // app.use(express.json());
 // app.use("/api/auth", authRoute);
 // app.use("/api/users", userRoute);
@@ -48,12 +50,11 @@ import productRoute from "./routes/product.js";
 import cartRoute from "./routes/cart.js";
 import orderRoute from "./routes/order.js";
 import stripeRoute from "./routes/stripe.js";
-import morgan from "morgan";
+
 
 dotenv.config();
 
 const app = express();
-app.use(morgan())
 const PORT = process.env.PORT || 5000;
 
 const connect = async () => {
